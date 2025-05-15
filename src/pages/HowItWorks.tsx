@@ -174,7 +174,7 @@ const HowItWorks: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/5 to-accent-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             {/* Foreground image */}
             <img 
-              src="/images/data cover web.jpg"
+              src="/images/data-cover-web.jpg"
               alt="DataAnalyzer Pro Dashboard" 
               className="relative rounded-xl max-w-5xl w-full h-auto transform transition-transform duration-500 group-hover:scale-[1.02] z-10"
               style={{ maxHeight: "1200px" }} 
