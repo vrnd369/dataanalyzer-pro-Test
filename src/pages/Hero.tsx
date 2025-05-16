@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
               </a>
               <Button 
                 variant="outline" 
-                size="lg" 
+                size="lg"
                 className="border-2 relative overflow-hidden group text-black border-black"
                 leftIcon={<Share2 className="mr-2 h-5 w-5" />}
               >
