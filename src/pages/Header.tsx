@@ -38,7 +38,7 @@ const Header: React.FC = () => {
 
           {/* Try Free Button - Desktop */}
           <div className="hidden md:flex items-center ">
-            <Button
+             <Button
               className="bg-teal-600 text-white hover:bg-teal-700"
               size="icon"
               onClick={handleTryFree}
