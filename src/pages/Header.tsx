@@ -37,10 +37,11 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Try Free Button - Desktop */}
-          <div className="hidden md:flex items-center">
-            <Button variant="default" size="icon" onClick={handleTryFree}>
+           <div className="hidden md:flex items-center ">
+            <Button variant="secondary" size="icon" onClick={handleTryFree}>
               Try Free
             </Button>
+          </div>
           </div>
           {/* Mobile Menu Button */}
           <button
