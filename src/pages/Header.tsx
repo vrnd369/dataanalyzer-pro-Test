@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           {/* Try Free Button - Desktop */}
           <div className="hidden md:flex items-center ">
              <Button
-              className="bg-teal-600 text-white hover:bg-teal-700 px-6 py-2 font-semibold text-base"
+              className="bg-white-600 text-white hover:bg-white-700 px-6 py-2 font-semibold text-base"
               onClick={handleTryFree}
             >
               Try Free
