@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '../components/ui/button';
 import { ArrowRight, Sparkles, Shield, BarChart, Share2, Award, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const trustBadges = [
   { icon: <Sparkles size={16} color="black" stroke="black" style={{ color: 'black', stroke: 'black', fill: 'black' }} />, text: "AI-Powered Analytics" },
@@ -130,7 +131,7 @@ const Hero: React.FC = () => {
             </motion.p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
-              <a href="/dashboard">
+              <Link to="/dashboard">
                 <Button 
                   variant="default" 
                   size="lg"
@@ -143,7 +144,7 @@ const Hero: React.FC = () => {
                   />
                   Try it Now
                 </Button>
-              </a>
+              </Link>
               <Button 
                 variant="outline" 
                 size="lg"
