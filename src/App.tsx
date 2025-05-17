@@ -10,6 +10,7 @@ import { WorkspaceProvider } from './components/workspace/WorkspaceProvider';
 import { AuthProvider } from './providers/auth/AuthProvider';
 // import { useAuth } from './hooks/useAuth';
 import { MainContent } from './components/layout/MainContent';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // 🔹 Main Layout without FloatingNav
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -29,6 +30,7 @@ const App: React.FC = () => {
     <AuthProvider>
       <WorkspaceProvider>
         <Router>
+          <SpeedInsights />
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
