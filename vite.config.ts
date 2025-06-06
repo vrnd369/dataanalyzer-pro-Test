@@ -17,5 +17,18 @@ export default defineConfig({
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@types': path.resolve(__dirname, './src/types')
     }
+  },
+  build: {
+    // Enable build caching
+    cacheDir: '.vite_cache',
+    // Optimize dependencies
+    commonjsOptions: {
+      include: [/node_modules/],
+      extensions: ['.js', '.cjs', '.ts', '.tsx']
+    },
+    // Improve build performance
+    rollupOptions: {
+      cache: true
+    }
   }
 });
