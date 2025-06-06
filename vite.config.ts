@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  cacheDir: '.vite_cache',
   server: {
     port: 5173,
     host: true,
@@ -19,8 +20,6 @@ export default defineConfig({
     }
   },
   build: {
-    // Enable build caching
-    cacheDir: '.vite_cache',
     // Optimize dependencies
     commonjsOptions: {
       include: [/node_modules/],
